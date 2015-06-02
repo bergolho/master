@@ -1,6 +1,10 @@
 
 ###**(c) Ruben Cardenes Almeida, 2014  Code to estimate Purkinje trees on LV surfaces** 
 
+##Abstract:
+
+The electrical activation of the heart is a complex physiological process that is essential for the understanding of several cardiac dysfunctions, such as ventricular tachycardia (VT). Nowadays, patient-specific activation times on ventricular chambers can be estimated from electro-anatomical maps, providing crucial information to clinicians for guiding cardiac radio-frequency ablation treatment. However, some relevant electrical pathways such as those of the Purkinje system are very difficult to interpret from these maps due to sparsity of data and the limited spatial resolution of the system. We present here a novel method to estimate these fast electrical pathways from the local activations maps (LATs) obtained from electro-anatomical maps. The location of Purkinje-myocardial junctions (PMJs) is estimated considering them as critical points of a distance map defined by the activation maps, and then minimal cost geodesic paths are computed on the ventricular surface between the detected junctions. Experiments to validate the proposed method have been carried out in simplified and realistic simulated data, showing good performance on recovering the main characteristics of simulated Purkinje networks (e.g. PMJs). A feasibility study with real cases of fascicular VT was also performed, showing promising results.
+
 ##First step: Singular points (PMJs) detection:  
 
 Usually we start from a single vtk file, a surface with the LAT values on it (surface_LAT.vtk):  
